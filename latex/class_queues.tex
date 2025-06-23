@@ -1,0 +1,136 @@
+\doxysection{Queues Class Reference}
+\hypertarget{class_queues}{}\label{class_queues}\index{Queues@{Queues}}
+
+
+This Class is for operation queues.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_queues_a27d3ceab61177fd964098d2e279e45b6}{Queues}} ()
+\begin{DoxyCompactList}\small\item\em private variable queue\+\_\+array to store element \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_queues_aca79bcfa6868dbc1a26b7a634d55f2df}{insert}} ()
+\begin{DoxyCompactList}\small\item\em method for entering data into a queue This method will prompt the user to input a number. If the queue is not full, the number will be added to the queue. If the queue is full, a "{}\+Queue overflow"{} message will be displayed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_queues_ac709e90a518a5028651c8c429c242082}{remove}} ()
+\begin{DoxyCompactList}\small\item\em Remove an element from the queue. This method will remove the front element of the queue. If the queue is empty, a "{}\+Queue underflow"{} message will be displayed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_queues_a2a65c0877fd6a01cb34a8774b8d00b03}{display}} ()
+\begin{DoxyCompactList}\small\item\em Display the elements of the queue This method will show all current elements in the queue. If the queue is empty, a "{}\+Queue is empty"{} message will be displayed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_queues_a7283ad6a026fc24efd58312e4cd53017}{FRONT}}
+\item 
+int \mbox{\hyperlink{class_queues_ac4fa24caf81e14cc11e177015a92190c}{REAR}}
+\begin{DoxyCompactList}\small\item\em private variable front for indicate first element \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_queues_a22149b6d4c6183800c339325f958103d}{max}} = 5
+\begin{DoxyCompactList}\small\item\em private variable rear for indicate the last element \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_queues_a55b8bf62deaa1901d0d348236976f317}{queue\+\_\+array}} \mbox{[}5\mbox{]}
+\begin{DoxyCompactList}\small\item\em private variable max for maximum capasity of element \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This Class is for operation queues. 
+
+\label{doc-constructors}
+\Hypertarget{class_queues_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_queues_a27d3ceab61177fd964098d2e279e45b6}\index{Queues@{Queues}!Queues@{Queues}}
+\index{Queues@{Queues}!Queues@{Queues}}
+\doxysubsubsection{\texorpdfstring{Queues()}{Queues()}}
+{\footnotesize\ttfamily \label{class_queues_a27d3ceab61177fd964098d2e279e45b6} 
+Queues\+::\+Queues (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+private variable queue\+\_\+array to store element 
+
+Construct a new \doxylink{class_queues}{Queues} object set default queues null with front = -\/1 and rear = -\/1 
+
+\label{doc-func-members}
+\Hypertarget{class_queues_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_queues_a2a65c0877fd6a01cb34a8774b8d00b03}\index{Queues@{Queues}!display@{display}}
+\index{display@{display}!Queues@{Queues}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \label{class_queues_a2a65c0877fd6a01cb34a8774b8d00b03} 
+void Queues\+::display (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Display the elements of the queue This method will show all current elements in the queue. If the queue is empty, a "{}\+Queue is empty"{} message will be displayed. 
+
+Create a local variable \textquotesingle{}FRONT\+\_\+position\textquotesingle{} to temporarily store the current FRONT index
+
+Create a local variable \textquotesingle{}REAR\+\_\+position\textquotesingle{} to temporarily store the current REAR index\Hypertarget{class_queues_aca79bcfa6868dbc1a26b7a634d55f2df}\index{Queues@{Queues}!insert@{insert}}
+\index{insert@{insert}!Queues@{Queues}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \label{class_queues_aca79bcfa6868dbc1a26b7a634d55f2df} 
+void Queues\+::insert (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+method for entering data into a queue This method will prompt the user to input a number. If the queue is not full, the number will be added to the queue. If the queue is full, a "{}\+Queue overflow"{} message will be displayed. 
+
+Declare variable \textquotesingle{}num\textquotesingle{} to store user input
+
+Prompt the user to enter a number
+
+Read input from the user and store it in \textquotesingle{}num\textquotesingle{}
+
+Print a new line for better output formatting\Hypertarget{class_queues_ac709e90a518a5028651c8c429c242082}\index{Queues@{Queues}!remove@{remove}}
+\index{remove@{remove}!Queues@{Queues}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{class_queues_ac709e90a518a5028651c8c429c242082} 
+void Queues\+::remove (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove an element from the queue. This method will remove the front element of the queue. If the queue is empty, a "{}\+Queue underflow"{} message will be displayed. 
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_queues_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_queues_a7283ad6a026fc24efd58312e4cd53017}\index{Queues@{Queues}!FRONT@{FRONT}}
+\index{FRONT@{FRONT}!Queues@{Queues}}
+\doxysubsubsection{\texorpdfstring{FRONT}{FRONT}}
+{\footnotesize\ttfamily \label{class_queues_a7283ad6a026fc24efd58312e4cd53017} 
+int Queues\+::\+FRONT\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_queues_a22149b6d4c6183800c339325f958103d}\index{Queues@{Queues}!max@{max}}
+\index{max@{max}!Queues@{Queues}}
+\doxysubsubsection{\texorpdfstring{max}{max}}
+{\footnotesize\ttfamily \label{class_queues_a22149b6d4c6183800c339325f958103d} 
+int Queues\+::max = 5\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+private variable rear for indicate the last element 
+
+\Hypertarget{class_queues_a55b8bf62deaa1901d0d348236976f317}\index{Queues@{Queues}!queue\_array@{queue\_array}}
+\index{queue\_array@{queue\_array}!Queues@{Queues}}
+\doxysubsubsection{\texorpdfstring{queue\_array}{queue\_array}}
+{\footnotesize\ttfamily \label{class_queues_a55b8bf62deaa1901d0d348236976f317} 
+int Queues\+::queue\+\_\+array\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+private variable max for maximum capasity of element 
+
+\Hypertarget{class_queues_ac4fa24caf81e14cc11e177015a92190c}\index{Queues@{Queues}!REAR@{REAR}}
+\index{REAR@{REAR}!Queues@{Queues}}
+\doxysubsubsection{\texorpdfstring{REAR}{REAR}}
+{\footnotesize\ttfamily \label{class_queues_ac4fa24caf81e14cc11e177015a92190c} 
+int Queues\+::\+REAR\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+private variable front for indicate first element 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{circular_queues_8cpp}{circular\+Queues.\+cpp}}\end{DoxyCompactItemize}
